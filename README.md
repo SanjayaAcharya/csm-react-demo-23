@@ -10,7 +10,7 @@ Introduction To Web Development and React\
 	•	Virtual DOM and its working : 5th May\
 	•	ECMA Script : 5th May\
 	•	Difference Between ES5 and ES6 : 5th May\
-	•	NPM modules : 5th May\\
+	•	NPM modules : 5th May\
 
 Components and Styling the Application Layout\
 	•	React Elements\
@@ -29,7 +29,7 @@ Components and Styling the Application Layout\
 	•	Different Form Concepts\
 	•	Styling in React\
 	•	Inline Styling\
-	•	CSS Stylesheet\\
+	•	CSS Stylesheet\
 
 Handling Navigation with Routes\
 	•	Routing\
@@ -41,7 +41,7 @@ Handling Navigation with Routes\
 	•	URL Parameters\
 	•	Nested Routes\
 	•	Implementing styles using NavLink\
-	•	API consumption in React application using Fetch method\\
+	•	API consumption in React application using Fetch method\
 
 React State Management using Redux\
 	•	Need Of Redux\
@@ -52,7 +52,7 @@ React State Management using Redux\
 	•	Redux Store\
 	•	Principles of Redux\
 	•	Pros of Redux\
-	•	NPM Packages required to work with Redux\\
+	•	NPM Packages required to work with Redux\
 
 React Hooks\
 	•	Caveat of JavaScript classes.\
