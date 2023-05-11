@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './common/header/header';
-import HeaderMenu from './common/header/headerMenu';
 
 function App() {
   return (
     <>
-    <Header title="Home Page" desc="My Home page content" />
-      <Header title="About Page" desc="My About page content" />
+      <Header title="Home Page" desc="My Home page content" />
+      
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />

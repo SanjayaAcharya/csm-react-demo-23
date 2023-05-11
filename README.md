@@ -22,7 +22,7 @@ Components and Styling the Application Layout\
 	•	Multiple Components : 9th May\
 	•	Props with Class based Component\
 	•	Props with Function based Component : 9th May\
-	•	States : 10th May\
+	•	States : 10th - 11th May\
 	•	Component Lifecycle\
 	•	React Events\
 	•	React Forms\
@@ -59,9 +59,9 @@ React Hooks\
 	•	Functional components and React hooks\
 	•	What are React hooks?\
 	•	Basic hooks\
-	•	useState() hook : 10th May\
-	•	How to write useState() hook when state variable is an array of objects : 10th May\
-	•	useEffect() hook : 10th May\
+	•	useState() hook : 10th - 11th May\
+	•	How to write useState() hook when state variable is an array of objects : 10th - 11th May\
+	•	useEffect() hook : 10th - 11th May\
 	•	Fetch API data using useEffect() hook\
 	•	useContext() hook\
 	•	Rules to write React hooks\
