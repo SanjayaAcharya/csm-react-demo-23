@@ -67,3 +67,14 @@ React Hooks\
 	•	Rules to write React hooks\
 	•	Additional hooks\
 	•	Custom Hooks\
+
+
+Extra
+	Spread Operator: Done
+	Destructuring
+	Safe Invocation
+	FilteLoop
+	Object Assignment
+	Arrow Function
+	JS Variable DD
+	React Virtual DOM: Done
