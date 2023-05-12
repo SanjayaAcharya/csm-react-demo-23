@@ -15,20 +15,21 @@ const HeaderMenu = () => {
         }else{
             iTopMenus.push(newItem);
         }
+        console.log("aasas", iTopMenus)
         setTopMenus(iTopMenus);
     });
    
     useEffect(()=>{
         console.log("topMenus::XXXXXXX")
-    },[])
-    console.log("topMenus::",topMenus)
+    },[topMenus])
+    console.log("topMenus:XXX:",topMenus)
     return (<><ul>
         {topMenus.map(menuItem=>{
-        return(<MenuItem menu={menuItem} />)
+        return(<MenuItem menu={menuItem} doClick={handleTopMenus} />)
     })}
     </ul>
     
-    <button onClick={()=>handleTopMenus({label: 'Login', link: 'http://www.csm.tech/login'})} >Login</button>
+    <button>Login</button>
    
     </>)
 }
