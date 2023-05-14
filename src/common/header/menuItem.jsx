@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './menuItem.css';
 
-const MenuItem = ({menu, doClick} ) => {
-    const {label: menuLabel, link: MenuLink} = menu;
-    
+const MenuItem = ({menu:{label:menuLabel, link:MenuLink}} ) => {
+    const [isActive, setIsActive] = useState(false);
     return (
         <>
     <li>
-        <a href={MenuLink}>{menuLabel}</a>
-        {menuLabel === 'Home'  && <button onClick={()=>doClick({label: 'Login', link: 'http://www.csm.tech/login'})} >Login</button>}
+        <a href={MenuLink} className={isActive?'active':''}>{menuLabel}</a>
+        <button onClick={()=>setIsActive(true)}>Active</button>
+
     </li>
     </>
     )

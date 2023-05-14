@@ -1,28 +1,32 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Header from './common/header/header';
 
 function App() {
+  const [myState, setMyState] = useState(1)
+  const [myState1, setMyState1] = useState("My CSM")
+  const [hideHeader, setHideHeader] = useState(false)
+  useEffect(()=>{
+    console.log("Life Cycle::::: Created");
+    
+  },[])
+  useEffect(()=>{
+    console.log("Life Cycle::::: Update");
+  })
+  useEffect(()=>{
+    console.log("Life Cycle:::myState:: Update");
+  },[myState, myState1])
+  
+
   return (
     <>
-      <Header title="Home Page" desc="My Home page content" />
+    
+    {myState}{myState1}
+      <button onClick={()=>{setMyState(myState+1)}}>Click</button>
+      <button onClick={()=>{setHideHeader(false)}}>Hide Header</button>
       
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <br/><br/><br/><br/>
+      {!hideHeader && <Header title="Home Page" desc="My Home page content" />}
     </>
   );
 }

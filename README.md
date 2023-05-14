@@ -22,9 +22,9 @@ Components and Styling the Application Layout\
 	•	Multiple Components : 9th May\
 	•	Props with Class based Component\
 	•	Props with Function based Component : 9th May\
-	•	States : 10th - 11th May\
-	•	Component Lifecycle\
-	•	React Events\
+	•	States : 10th - 13th May\
+	•	Component Lifecycle: 13th May\
+	•	React Events: 11th - 13th May\
 	•	React Forms\
 	•	Different Form Concepts\
 	•	Styling in React\
@@ -61,7 +61,7 @@ React Hooks\
 	•	Basic hooks\
 	•	useState() hook : 10th - 11th May\
 	•	How to write useState() hook when state variable is an array of objects : 10th - 11th May\
-	•	useEffect() hook : 10th - 11th May\
+	•	useEffect() hook : 10th - 13th May\
 	•	Fetch API data using useEffect() hook\
 	•	useContext() hook\
 	•	Rules to write React hooks\
@@ -70,12 +70,13 @@ React Hooks\
 
 
 Extra
-	Spread Operator: Done
-	Destructuring
-	Safe Invocation
-	FilteLoop
-	Object Assignment
-	Arrow Function
-	JS Variable DD
-	React Virtual DOM: Done
-	If Else in JSX
+	Spread Operator: Done\
+	Destructuring: Done\
+	Safe Invocation\
+	FilteLoop\
+	Object Assignment\
+	Arrow Function\
+	JS Variable DD\
+	React Virtual DOM: Done\
+	If Else in JSX\
+	classnames extens\
