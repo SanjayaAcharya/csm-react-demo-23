@@ -29,7 +29,7 @@ Components and Styling the Application Layout\
 	•	Different Form Concepts\
 	•	Styling in React\
 	•	Inline Styling\
-	•	CSS Stylesheet\
+	•	CSS Stylesheet: 15th May\
 
 Handling Navigation with Routes\
 	•	Routing\
@@ -66,7 +66,7 @@ React Hooks\
 	•	useContext() hook\
 	•	Rules to write React hooks\
 	•	Additional hooks\
-	•	Custom Hooks\
+	•	Custom Hooks
 
 
 Extra
@@ -74,9 +74,11 @@ Extra
 	Destructuring: Done\
 	Safe Invocation\
 	FilteLoop\
-	Object Assignment\
+	Object Assignment: 15th May\
+	JS Variable DD: 15th May\
 	Arrow Function\
-	JS Variable DD\
 	React Virtual DOM: Done\
 	If Else in JSX\
 	classnames extens\
+	Lodash: 15th May\
+	Axios

@@ -20,13 +20,13 @@ function App() {
 
   return (
     <>
-    
+    {!hideHeader && <Header title="Home Page" desc="My Home page content" />}
+      <br/><br/><br/><br/>
     {myState}{myState1}
       <button onClick={()=>{setMyState(myState+1)}}>Click</button>
       <button onClick={()=>{setHideHeader(false)}}>Hide Header</button>
       
-      <br/><br/><br/><br/>
-      {!hideHeader && <Header title="Home Page" desc="My Home page content" />}
+      
     </>
   );
 }
