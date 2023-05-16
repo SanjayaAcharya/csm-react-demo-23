@@ -3,10 +3,15 @@ import './menuItem.css';
 
 const MenuItem = ({menu:{label:menuLabel, link:MenuLink}} ) => {
  
+    const elementStyle = {
+        liStyle: { display: 'inline-block'},
+        ancStyle: {textDecoration: 'none', padding: '5px 10px'}
+    }
+
     return (
         <>
-    <li>
-        <a href={MenuLink}>{menuLabel}</a>
+    <li style={elementStyle.liStyle}>
+        <a style={elementStyle.ancStyle} href={MenuLink} >{menuLabel}</a>
     </li>
     </>
     )

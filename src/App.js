@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Header from './common/header/header';
+import ContentList from './components/ContentList';
 
 function App() {
   const [myState, setMyState] = useState(1)
@@ -21,11 +22,12 @@ function App() {
   return (
     <>
     {!hideHeader && <Header title="Home Page" desc="My Home page content" />}
-      <br/><br/><br/><br/>
+      <br/>
     {myState}{myState1}
       <button onClick={()=>{setMyState(myState+1)}}>Click</button>
       <button onClick={()=>{setHideHeader(false)}}>Hide Header</button>
-      
+      <hr/>
+      <ContentList/>
       
     </>
   );

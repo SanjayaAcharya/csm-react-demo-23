@@ -27,8 +27,8 @@ Components and Styling the Application Layout\
 	•	React Events: 11th - 13th May\
 	•	React Forms\
 	•	Different Form Concepts\
-	•	Styling in React\
-	•	Inline Styling\
+	•	Styling in React 16th May\
+	•	Inline Styling: 16th May\
 	•	CSS Stylesheet: 15th May\
 
 Handling Navigation with Routes\
@@ -62,7 +62,7 @@ React Hooks\
 	•	useState() hook : 10th - 11th May\
 	•	How to write useState() hook when state variable is an array of objects : 10th - 11th May\
 	•	useEffect() hook : 10th - 13th May\
-	•	Fetch API data using useEffect() hook\
+	•	Fetch API data using useEffect() hook : 16th May\
 	•	useContext() hook\
 	•	Rules to write React hooks\
 	•	Additional hooks\
