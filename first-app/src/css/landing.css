@@ -1,0 +1,19 @@
+.content-wrapper {
+    height: 100vh;
+    display: flex;
+    background-color: #f3f6fb;
+}
+.content-wrapper .side-menu {
+    width: 250px;
+    padding: 1rem;
+}
+.content-wrapper .content-body {
+    flex: 1;
+    padding: 1rem 1rem 1rem 0;
+}
+.body-wrapper {
+    background-color: #fff;
+    border-radius: 1rem;
+    height: calc(100vh - 104px);
+    overflow: auto;
+}
