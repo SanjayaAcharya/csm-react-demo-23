@@ -2,6 +2,7 @@ import React from 'react';
 import MenuItem from './menuItem';
 import './headerMenu.css';
 import { Button } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const HeaderMenu = ({topMenus}) => {
     
@@ -11,7 +12,7 @@ const HeaderMenu = ({topMenus}) => {
         return(<MenuItem key={iIndex} menu={menuItem} />)
     })}
     </ul>
-    <Button size='lg'>BT Button</Button>
+    <br/>
     </>)
 }
 

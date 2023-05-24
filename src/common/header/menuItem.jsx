@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './menuItem.css';
+import { Link, NavLink } from 'react-router-dom';
 
 const MenuItem = ({menu:{label:menuLabel, link:MenuLink}} ) => {
  
@@ -11,7 +12,11 @@ const MenuItem = ({menu:{label:menuLabel, link:MenuLink}} ) => {
     return (
         <>
     <li style={elementStyle.liStyle}>
-        <a style={elementStyle.ancStyle} href={MenuLink} >{menuLabel}</a>
+        {/* <a  href={MenuLink} >{menuLabel}</a> */}
+        <NavLink style={isActive => ({
+    color: isActive ? "green" : "blue",
+    ...elementStyle.ancStyle
+  })} to={MenuLink} >{menuLabel}</NavLink>
     </li>
     </>
     )

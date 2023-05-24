@@ -8,9 +8,10 @@ const Header = (props) => {
 
 
     const [topMenus, setTopMenus] = useState([
-        {label: 'Home', link: 'https://www.csm.tech/in/'}, 
-        {label: 'About', link: 'http://www.csm.tech/about'},
-        {label: 'Services', link: 'http://www.csm.tech/Services'},
+        {label: 'Home', link: '/'}, 
+        {label: 'list', link: '/list'},
+        {label: 'list1', link: '/list1'},
+        {label: 'Services', link: '/services'},
     ]);
     return (
     <>
@@ -20,6 +21,7 @@ const Header = (props) => {
     <br/>
     <header>{props.title}</header>
     <p>{props.desc}</p>
+    <hr/>
     </>
     )
 }
