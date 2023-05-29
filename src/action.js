@@ -2,8 +2,9 @@ const productListAPIURL = "https://dummyjson.com/products";
 
 export const ACTION_GET_PROD_LIST = "products/GET_PROD_LIST";
 
-export const getProductList = async (productsDispatch) => {
-    return fetch(productListAPIURL)
+export const getProductList = async (productsDispatch, id) => {
+    return fetch(`${productListAPIURL}?id=${id}`)
+    // return fetch(productListAPIURL)
     .then((res) => res.json())
     .then((json) => {
         console.log(json)

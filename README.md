@@ -32,16 +32,17 @@ Components and Styling the Application Layout\
 	•	CSS Stylesheet: 15th May\
 
 Handling Navigation with Routes\
-	•	Routing\
-	•	react-router\
-	•	Features of react-router\
-	•	Configuration of routing using react-router\
-	•	Navigation using Links\
-	•	404 page (Not found Page)\
-	•	URL Parameters\
-	•	Nested Routes\
-	•	Implementing styles using NavLink\
-	•	API consumption in React application using Fetch method\
+	•	Routing: 29th May\
+	•	react-router: 29th May\
+	•	Features of react-router: 29th May\
+	•	Configuration of routing using react-router: 29th May\
+	•	Navigation using Links: 29th May\
+	•	404 page (Not found Page): 29th May\
+	•	URL Parameters: 29th May\
+	•	Nested Routes: 29th May\
+	•	Shared Routes: 29th May\
+	•	Implementing styles using NavLink: 29th May\
+	•	API consumption in React application using Fetch method: Done\
 
 React State Management using Redux\
 	•	Need Of Redux\
@@ -63,7 +64,7 @@ React Hooks\
 	•	How to write useState() hook when state variable is an array of objects : 10th - 11th May\
 	•	useEffect() hook : 10th - 13th May\
 	•	Fetch API data using useEffect() hook : 16th May\
-	•	useContext() hook\
+	•	useContext() hook : Done\
 	•	Rules to write React hooks\
 	•	Additional hooks\
 	•	Custom Hooks
@@ -72,7 +73,7 @@ React Hooks\
 Extra
 	Spread Operator: Done\
 	Destructuring: Done\
-	Safe Invocation\
+	Safe Invocation: 29th May\
 	FilteLoop\
 	Object Assignment: 15th May\
 	JS Variable DD: 15th May\
