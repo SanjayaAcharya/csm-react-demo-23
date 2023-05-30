@@ -3,14 +3,22 @@ import './header.css'
 import HeaderMenu from './headerMenu';
 import HeaderContent from './headerContent';
 import { Nav } from 'react-bootstrap';
+import { useStateValue } from '../../appProvider';
 
 const Header = (props) => {
+  const {products:[productsState, productsDispatch]} = useStateValue();
 
+
+  useEffect(()=>{
+    if(productsState.prodDelSuccess){
+      alert(productsState.prodDelMsg);
+    }
+  },[productsState.prodDelSuccess])
 
 
     const [topMenus, setTopMenus] = useState([
         {label: 'Home', link: '/'}, 
-        {label: 'list', link: '/list'},
+        {label: 'list', link: '/list/test/123'},
         {label: 'list1', link: '/list1'},
         {label: 'Services', link: '/services'},
     ]);

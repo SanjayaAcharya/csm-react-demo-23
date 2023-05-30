@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import { Container, Row } from "react-bootstrap";
 import ContentListItem from "./ContentListItem";
-import { getProductList } from "../action";
+import { delProd, getProductList } from "../action";
 import {useStateValue} from '../appProvider'
 
 
@@ -13,11 +13,13 @@ const {title = "", id = 0 } =  urlParams || {};
 
   const {products:[productsState, productsDispatch]} = useStateValue();
 
-  console.log("productsState:::",productsState);
+  console.log("productsState:::",productsState.prodDelSuccess);
+
   
   const [productList, setProductList] = useState([]);
   useEffect(()=>{
     getProductList(productsDispatch, id);
+    delProd(productsDispatch);
   },[]) 
   
   useEffect(()=>{

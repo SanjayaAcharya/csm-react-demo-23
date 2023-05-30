@@ -4,8 +4,15 @@ import ContentListItem from "./ContentListItem";
 import { useStateValue } from "../appProvider";
 
 const ContentList1 = () => {
+
+
+
  
   const {products:[productsState, productsDispatch]} = useStateValue();
+
+
+
+
   return (
     <Container>
       <Row>

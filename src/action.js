@@ -1,6 +1,9 @@
 const productListAPIURL = "https://dummyjson.com/products";
 
 export const ACTION_GET_PROD_LIST = "products/GET_PROD_LIST";
+export const ACTION_PROD_DEL_LOADING = "products/DEL_PROD_LIST_LOADING";
+export const ACTION_PROD_DEL_SUCCESS = "products/DEL_PROD_LIST_SUCCESS";
+export const ACTION_PROD_DEL_ERROR = "products/DEL_PROD_LIST_ERROR";
 
 export const getProductList = async (productsDispatch, id) => {
     return fetch(`${productListAPIURL}?id=${id}`)
@@ -34,4 +37,18 @@ export const callSaveFormDataAPI = async (formData, productsDispatch) => {
     }
     );
     
+}
+
+export const delProd = (productsDispatch) => {
+    productsDispatch({type:ACTION_PROD_DEL_LOADING});
+    const timer = setTimeout(() => {
+        if(true){
+            productsDispatch({type:ACTION_PROD_DEL_SUCCESS, data: {msg:"Delete Success"} });
+        }else{
+            productsDispatch({type:ACTION_PROD_DEL_ERROR });
+        }
+      }, 4000);
+      return () => clearTimeout(timer);
+    
+
 }
