@@ -1,3 +1,5 @@
+import { store } from "./appProvider";
+
 const productListAPIURL = "https://dummyjson.com/products";
 
 export const ACTION_GET_PROD_LIST = "products/GET_PROD_LIST";
@@ -12,6 +14,7 @@ export const getProductList = async (productsDispatch, id) => {
     .then((json) => {
         console.log(json)
         productsDispatch({type:ACTION_GET_PROD_LIST, data:json.products })
+        store.dispatch({type:"products/GET_PROD_LIST", data:json.products })
     }
     );
     

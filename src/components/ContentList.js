@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Container, Row } from "react-bootstrap";
 import ContentListItem from "./ContentListItem";
 import { delProd, getProductList } from "../action";
-import {useStateValue} from '../appProvider'
+import {store, useStateValue} from '../appProvider'
 
 
 const ContentList = () => {
@@ -25,11 +25,13 @@ const {title = "", id = 0 } =  urlParams || {};
   useEffect(()=>{
     setProductList(productsState.productList);
   },[productsState])
+  const {productList: rdxProductList, productCount} = store.getState() || {};
   
   return (
     <Container>
+      {productCount}
       <Row>
-        {productList && productList.map((item, index)=>{
+        {rdxProductList && rdxProductList.map((item, index)=>{
 if(index<5){
             return(
          
