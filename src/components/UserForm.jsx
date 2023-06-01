@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Alert, Button, Col, Container, Form, Row } from "react-bootstrap";
 import {useStateValue} from '../appProvider'
 import { callSaveFormDataAPI } from "../action";
+import ClsComponent from "./ClsComponent";
 
 const UserForm = () => {
 
@@ -25,6 +26,8 @@ if(fieldName && fieldValue){
     return (
 
         <Container>
+            <ClsComponent test="Class Component"/>
+            <hr/>
             <Form className="mb-5">
                 {formError && <Alert variant="danger">{formError}</Alert>}
                 <Row>

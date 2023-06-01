@@ -16,11 +16,11 @@ Components and Styling the Application Layout\
 	•	React Elements : 9th May\
 	•	Render Function : 9th May\
 	•	Components : 9th May\
-	•	Class Component\
-	•	Component Constructor\
+	•	Class Component: 1th Jun\
+	•	Component Constructor: 1th Jun\
 	•	Functional Components : 9th May\
 	•	Multiple Components : 9th May\
-	•	Props with Class based Component\
+	•	Props with Class based Component: 1th Jun\
 	•	Props with Function based Component : 9th May\
 	•	States : 10th - 13th May\
 	•	Component Lifecycle: 13th May\
@@ -45,21 +45,21 @@ Handling Navigation with Routes\
 	•	API consumption in React application using Fetch method: Done\
 
 React State Management using Redux\
-	•	Need Of Redux\
-	•	What Is Redux\
-	•	Redux Architecture\
-	•	Redux Action\
-	•	Redux Reducers\
-	•	Redux Store\
-	•	Principles of Redux\
-	•	Pros of Redux\
-	•	NPM Packages required to work with Redux\
+	•	Need Of Redux: 31th May\
+	•	What Is Redux: 31th May\
+	•	Redux Architecture: 31th May\
+	•	Redux Action: 31th May\
+	•	Redux Reducers: 31th May\
+	•	Redux Store: 31th May\
+	•	Principles of Redux: 31th May\
+	•	Pros of Redux: 31th May\
+	•	NPM Packages required to work with Redux: 31th May\
 
 React Hooks\
 	•	Caveat of JavaScript classes.\
-	•	Functional components and React hooks\
+	•	Functional components and React hooks: Done\
 	•	What are React hooks?\
-	•	Basic hooks\
+	•	Basic hooks: Done\
 	•	useState() hook : 10th - 11th May\
 	•	How to write useState() hook when state variable is an array of objects : 10th - 11th May\
 	•	useEffect() hook : 10th - 13th May\
