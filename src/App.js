@@ -11,6 +11,7 @@ import AD from './components/services/ad';
 import DM from './components/services/dm';
 // import Services from './components/services';
 import Parent from './components/services/parent';
+import AddUser from './pages/AddUser';
 // import Home from './common/header/home';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/list/:title/:id" element={<ContentList />} />
           <Route path="/list/:title/" element={<ContentList />} />
           <Route path="/list1" element={<ContentList1 />} />
+          <Route path="/addUser" element={<AddUser />} />
           <Route path="services" element={<Parent />} >
             <Route index element={<Services/>} />
             <Route path="wd" element={<WD />} />

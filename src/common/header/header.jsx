@@ -21,6 +21,7 @@ const Header = (props) => {
         {label: 'list', link: '/list/test/123'},
         {label: 'list1', link: '/list1'},
         {label: 'Services', link: '/services'},
+        {label: 'Add User', link: '/addUser'},
     ]);
     return (
     <>
