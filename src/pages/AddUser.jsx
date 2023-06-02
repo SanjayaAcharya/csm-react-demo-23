@@ -15,9 +15,9 @@ function AddUser() {
                         <Form.Check type="radio" name="gender" id="male" label="Male" />
                         <Form.Check type="radio" name="gender" id="female" label="Female" />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="Enter Mobile">
+                    <Form.Group className="mb-3" controlId="mobile">
                         <Form.Label>Mobile No.</Form.Label>
-                        <Form.Control type="text" placeholder="name@example.com" />
+                        <Form.Control type="text" placeholder="Enter Mobile" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="email">
                         <Form.Label>Email ID</Form.Label>
