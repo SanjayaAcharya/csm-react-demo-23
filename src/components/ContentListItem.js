@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Col } from "react-bootstrap";
 import CardHeader from "react-bootstrap/esm/CardHeader";
 
-const ContentListItem = ({item}) => {
+const ContentListItem = ({item = {}}) => {
   return (
     <Col xs="3" className="mb-3">
       <Card>

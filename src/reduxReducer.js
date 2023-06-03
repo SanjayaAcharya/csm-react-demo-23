@@ -1,8 +1,7 @@
 
-export const initialState = {};
+export const initialState = {productCount:0};
 
 export default (state = initialState, action) => {
-  console.log("Redux action",action)
     switch (action.type) {
       case "products/GET_PROD_LIST": {
         return {

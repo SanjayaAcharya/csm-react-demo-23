@@ -1,3 +1,4 @@
+import axios from "axios";
 import { store } from "./appProvider";
 
 const productListAPIURL = "https://dummyjson.com/products";
@@ -8,13 +9,20 @@ export const ACTION_PROD_DEL_SUCCESS = "products/DEL_PROD_LIST_SUCCESS";
 export const ACTION_PROD_DEL_ERROR = "products/DEL_PROD_LIST_ERROR";
 
 export const getProductList = async (productsDispatch, id) => {
-    return fetch(`${productListAPIURL}?id=${id}`)
+    // return axios(`${productListAPIURL}?id=${id}`)
     // return fetch(productListAPIURL)
-    .then((res) => res.json())
+
+    axios({
+        url: `${productListAPIURL}?id=${id}`,
+       
+        // Attaching the form data
+        // data: formData,
+    })
     .then((json) => {
-        console.log(json)
-        productsDispatch({type:ACTION_GET_PROD_LIST, data:json.products })
-        store.dispatch({type:"products/GET_PROD_LIST", data:json.products })
+        console.log("json:::",json.data);
+        const data = json.data.products;
+        productsDispatch({type:ACTION_GET_PROD_LIST, data })
+        store.dispatch({type:"products/GET_PROD_LIST", data })
     }
     );
     

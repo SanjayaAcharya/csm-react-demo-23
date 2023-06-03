@@ -4,6 +4,7 @@ import { Container, Row } from "react-bootstrap";
 import ContentListItem from "./ContentListItem";
 import { delProd, getProductList } from "../action";
 import {store, useStateValue} from '../appProvider'
+import useMyHooks from "../hooks/useMyHooks";
 
 
 const ContentList = () => {
@@ -17,9 +18,15 @@ const {title = "", id = 0 } =  urlParams || {};
 
   
   const [productList, setProductList] = useState([]);
+
+  const [pList] = useMyHooks(`https://dummyjson.com/products?id=${id}`);
+
+  console.log("pList:::",pList);
+
   useEffect(()=>{
     getProductList(productsDispatch, id);
     delProd(productsDispatch);
+    
   },[]) 
   
   useEffect(()=>{
@@ -31,7 +38,7 @@ const {title = "", id = 0 } =  urlParams || {};
     <Container>
       {productCount}
       <Row>
-        {rdxProductList && rdxProductList.map((item, index)=>{
+        {pList && pList.map((item, index)=>{
 if(index<5){
             return(
          
