@@ -1,19 +1,28 @@
 {
-  "posts": [
+  "users": [
+    {
+      "id": 5,
+      "name": "Deepak pandey",
+      "gender": "Male",
+      "email": "deepak@gmail.com",
+      "mob": 123654987,
+      "address": "Bhubaneswar,Acharya Vihar"
+    },
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Amit ",
+      "gender": "Male",
+      "email": "amit@gmail.com",
+      "mob": 123654987,
+      "address": "Bhubaneswar,Acharya Vihar"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Manas ",
+      "gender": "Male",
+      "email": "manas@gmail.com",
+      "mob": 324354631565,
+      "address": "Bhubaneswar,Acharya Vihar",
+      "id": 6
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
